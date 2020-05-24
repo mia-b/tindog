@@ -1,20 +1,11 @@
 /**************************** ELEMENT SELECTORS ****************************/
 body {
   font-family: 'Montserrat';
-
+  text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 900;
-}
-
-h2 {
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-h3 {
-  font-size: 1.5rem;
+h2, h3, h4, h5,h6 {
+  font-weight: 700;
 }
 
 p {
@@ -23,10 +14,12 @@ p {
 
 /****************************  SECTIONS ****************************/
 
+/* Containers */
 .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 7% 15%;
 }
 
+/* Section Background Colours */
 .bg-custom-red {
   background-color: #ff4c68;
 }
@@ -35,16 +28,35 @@ p {
   background-color: #ef8172;
 }
 
-/********************* SECTION: TITLE *********************/
+.bg-white {
+  background-color: #fff;
+}
 
-#title {
+/* Section Font Colours */
+.font-white {
   color: #fff;
 }
 
-/* The Main Heading */
+/* Headings */
 .big-heading {
+  font-weight: 900;
   font-size: 3.5rem;
   line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/********************* SECTION: TITLE *********************/
+
+#title {
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
 }
 
 /* Download Buttons */
@@ -60,7 +72,7 @@ p {
   width: 60%;
 }
 
-/* Responsiveness of Section: Title */
+/* Media Query for Section: Title */
 @media (max-width: 1028px) {
 
   #title {
@@ -96,13 +108,15 @@ p {
 /********************* SECTION: FEATURES *********************/
 
 #features {
-  padding: 4% 10%;
   position: relative;
-  text-align: center;
 }
 
-.feature {
-  padding: 2%;
+.feature-box {
+  padding: 4.5%;
+}
+
+.feature-title {
+  font-size: 1.5rem;
 }
 
 .icon {
@@ -118,11 +132,6 @@ p {
 
 #testimonials {
   color: #fff;
-  text-align: center;
-}
-
-.carousel-item {
-  padding: 7% 15%;
 }
 
 .testimonial-img {
@@ -131,11 +140,15 @@ p {
   width: 10%;
 }
 
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
 /********************* SECTION: PRESS *********************/
 
 #press {
   padding-bottom: 3%;
-  text-align: center;
 }
 
 .press-logo {
@@ -145,54 +158,32 @@ p {
 
 /********************* SECTION: PRICING*********************/
 #pricing {
-  padding: 100px;
-  text-align: center;
+  padding: 7% 8%;
 }
 
 .pricing-col {
   padding: 3% 2%;
 }
 
-.price-title {
-  font-size: 3rem;
+.card-title {
+  font-size: 1.5rem;
+}
+
+.price-text {
+  font-size: 2rem;
   font-weight: 400;
   line-height: 1.5;
 }
 
-/* CTA Section */
-.cta-heading {
-  font-size: 3rem;
-  font-weight: 900;
-  line-height: 1.5;
-}
 
-/* Footer Section */
+/********************* SECTION: CTA *********************/
+
+
+
+/********************* SECTION: FOOTER *********************/
+
 .social-icon {
   margin: 20px 7px;
-}
-
-/**************************** ID SELECTORS (Sections) ****************************/
-
-
-
-
-
-
-
-
-
-
-
-#cta {
-  background-color: #ff4c68;
-  color: #fff;
-  padding: 7% 15%;
-  text-align: center;
-}
-
-#footer {
-  padding: 7% 15%;
-  text-align: center;
 }
 
 /**************************** MEDIA QUERY ****************************/
