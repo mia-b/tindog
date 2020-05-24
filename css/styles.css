@@ -1,36 +1,76 @@
-/**************************** TAG SELECTORS ****************************/
+/**************************** ELEMENT SELECTORS ****************************/
 body {
   font-family: 'Montserrat';
 
 }
 
-h1 {
-  font-family: 'Montserrat';
-  font-size: 3.5rem;
+h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
-  line-height: 1.5;
-
 }
 
 h2 {
-  font-family: 'Montserrat';
   font-size: 3rem;
-  font-weight: 900;
   line-height: 1.5;
 }
 
 h3 {
   font-size: 1.5rem;
-  font-weight: 900;
 }
 
 p {
   color: #8f8f8f;
 }
-/****************************  CLASS SELECTORS ****************************/
+
+/****************************  SECTIONS ****************************/
 
 .container-fluid {
   padding: 3% 15% 7%;
+}
+
+.bg-custom-red {
+  background-color: #ff4c68;
+}
+
+.bg-custom-orange {
+  background-color: #ef8172;
+}
+
+/********************* SECTION: TITLE *********************/
+
+#title {
+  color: #fff;
+}
+
+/* The Main Heading */
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* Download Buttons */
+.download-btn {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Image */
+.title-img {
+  position: absolute;
+  right: 20%;
+  transform: rotate(16deg);
+  width: 60%;
+}
+
+/* Responsiveness of Section: Title */
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
 }
 
 /* Navigation Bar */
@@ -53,20 +93,14 @@ p {
   font-weight: 400;
 }
 
-/* Download Buttons */
-.download-btn {
-  margin: 5% 3% 5% 0;
+/********************* SECTION: FEATURES *********************/
+
+#features {
+  padding: 4% 10%;
+  position: relative;
+  text-align: center;
 }
 
-/* Title Image */
-.title-img {
-  position: absolute;
-  right: 20%;
-  transform: rotate(16deg);
-  width: 60%;
-}
-
-/* Features Section */
 .feature {
   padding: 2%;
 }
@@ -80,7 +114,13 @@ p {
   color: #ff4c68;
 }
 
-/* Testimonial Section */
+/********************* SECTION: TESTIMONIALS *********************/
+
+#testimonials {
+  color: #fff;
+  text-align: center;
+}
+
 .carousel-item {
   padding: 7% 15%;
 }
@@ -91,19 +131,32 @@ p {
   width: 10%;
 }
 
+/********************* SECTION: PRESS *********************/
+
+#press {
+  padding-bottom: 3%;
+  text-align: center;
+}
+
 .press-logo {
   margin: 20px 20px 50px;
   width: 10%;
 }
 
-/* Pricing Section */
+/********************* SECTION: PRICING*********************/
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
 .pricing-col {
   padding: 3% 2%;
 }
 
-.card-title {
+.price-title {
+  font-size: 3rem;
   font-weight: 400;
-  font-size: 2rem;
+  line-height: 1.5;
 }
 
 /* CTA Section */
@@ -120,34 +173,15 @@ p {
 
 /**************************** ID SELECTORS (Sections) ****************************/
 
-#title {
-  background-color: #ff4c68;
-  color: #fff;
-}
 
-#features {
-  background-color: #fff;
-  padding: 4% 10%;
-  position: relative;
-  text-align: center;
-}
 
-#testimonials {
-  background-color: #ef8172;
-  color: #fff;
-  text-align: center;
-}
 
-#press {
-  background-color: #ef8172;
-  padding-bottom: 3%;
-  text-align: center;
-}
 
-#pricing {
-  padding: 100px;
-  text-align: center;
-}
+
+
+
+
+
 
 #cta {
   background-color: #ff4c68;
@@ -162,15 +196,3 @@ p {
 }
 
 /**************************** MEDIA QUERY ****************************/
-
-@media (max-width: 1028px) {
-
-  #title {
-    text-align: center;
-  }
-
-  .title-img {
-    position: static;
-    transform: rotate(0);
-  }
-}
