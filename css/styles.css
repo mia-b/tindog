@@ -22,19 +22,16 @@ p {
 /* Section Background Colours */
 .bg-custom-red {
   background-color: #ff4c68;
+  color: #fff;
 }
 
 .bg-custom-orange {
   background-color: #ef8172;
+  color: #fff;
 }
 
 .bg-white {
   background-color: #fff;
-}
-
-/* Section Font Colours */
-.font-white {
-  color: #fff;
 }
 
 /* Headings */
@@ -51,12 +48,9 @@ p {
 
 /********************* SECTION: TITLE *********************/
 
-#title {
-  text-align: left;
-}
-
 #title .container-fluid {
   padding: 3% 15% 7%;
+  text-align: left;
 }
 
 /* Download Buttons */
@@ -130,9 +124,7 @@ p {
 
 /********************* SECTION: TESTIMONIALS *********************/
 
-#testimonials {
-  color: #fff;
-}
+/* #testimonials {} */
 
 .testimonial-img {
   border-radius: 100%;
@@ -178,7 +170,7 @@ p {
 
 /********************* SECTION: CTA *********************/
 
-
+/* #cta {} */
 
 /********************* SECTION: FOOTER *********************/
 
