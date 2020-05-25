@@ -69,13 +69,14 @@ p {
 /* Media Query for Section: Title */
 @media (max-width: 1028px) {
 
-  #title {
+  #title .container-fluid {
     text-align: center;
   }
 
   .title-img {
     position: static;
     transform: rotate(0);
+    width: 50%;
   }
 }
 
